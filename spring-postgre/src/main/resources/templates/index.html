@@ -1,13 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-  <head>
+<head> 
     <title>Index</title>
-  </head>
-  <body>
-    <div>
-      <a href="#" th:href="@{/}">Index</a>
-      <a th:href="@{/students}">Students List</a>
-      <a th:href="@{/students/add}">Create Student</a>
-    </div>
-  </body>
+</head>
+<body>
+    <div th:replace="~{myFragment :: my-header}"></div>
+
+    <div th:replace="~{myFragment :: my-footer}"></div>
+</body>
 </html>
